@@ -4,6 +4,6 @@ class Input[T](name: String) {
 
 }
 abstract class Problem {
-  name = "Problem"
-  inputs: List[Input]
+  def name = "Problem"
+  def inputs: List[Input[T:>Any]]
 }
