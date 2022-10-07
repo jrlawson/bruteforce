@@ -1,7 +1,7 @@
 package bruteforce.combinatorial
 
 class ArrangementOptimizer(size: Int, objectiveFunction: Permutation=>Option[Double]) {
-  def run(): Option[(Permutation,Double)] = {
+  def optimize: Option[(Permutation,Double)] = {
     var bestCase: Option[(Permutation,Double)] = None
 
     def evaluate(permutation: Permutation): Unit = {
